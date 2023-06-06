@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Conversor de Temperatura</title>
+    </head>
+
+    <body>
+        <div id="form-temperatura" class="w-50 h-100 flex-container">
+            <h1>Conversor de Temperaturas</h1>
+            <form>
+                <label for="temperatura">Selecione a temperatura</label>
+                <div id="input-temperatura" class="flex-container">
+                    <input name="temperatura" id="temperatura" type="range" min="0" max="500">
+                    <span id="temperatura-selecionada">0</span>
+                </div>
+                <label for="unidade">Escolha a escala utilizada</label>
+                <select name="escala" id="escala">
+                    <option value="kelvin">Kelvin (K)</option>
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahreinheit (°F)</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="resultados" class="w-50 h-100 flex-container">
+            <h2>Resultados</h2>
+            <div class="flex-container">
+                <div class="card-resultado">
+                    <p class="resultado-valor">10</p>
+                    <p class="resultado-escala">Fahrenheit (°F)</p>
+                </div>
+                <div class="card-resultado">
+                    <p class="resultado-valor">10</p>
+                    <p class="resultado-escala">Fahrenheit (°F)</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
